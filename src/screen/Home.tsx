@@ -1,9 +1,5 @@
 import React, { useRef, useState } from "react";
-import {
-  Animated,
-  Pressable,
-  Text,
-} from "react-native";
+import { Animated, Pressable, Text } from "react-native";
 
 function Home() {
   const [open, setOpen] = useState(false);
@@ -20,7 +16,7 @@ function Home() {
   return (
     <Pressable
       onPress={handleOpen}
-      className={`w-full transition-all   bg-slate-500 absolute bottom-0 `}
+      className={`w-full transition-all   bg-slate-500 absolute bottom-5 `}
     >
       <Animated.View style={{ height: heightAnim, backgroundColor: "red" }}>
         <Text className="text-center text-2xl">Hello Wordld</Text>
